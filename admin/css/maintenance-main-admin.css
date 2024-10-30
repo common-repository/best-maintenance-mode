@@ -1,0 +1,105 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/* Misc visuals
+----------------------------------*/
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.main-maintenance-notice .notice {
+	margin: 5px 15px;
+}
+
+.main-maintenance-notice .notice p {
+    margin: .5em 0;
+}
+
+.main-maintenance-notice {
+	background: #fff;
+	border-top: 4px;
+	display: block;
+	min-height: 68px;
+	position: relative;
+	margin: 40px 20px 0 2px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	border: 1px solid #ccc;
+}
+
+.main-notice-left {
+	float: left;
+	width: 85px;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+.main-notice-left img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.main-notice-center {
+	width: calc(80% - 85px);
+	float: left;
+	padding: 23px 6px;
+	box-sizing: border-box;
+}
+
+.main-notice-right {
+	width: 20%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+	min-height: 85px;
+	border-left: 1px solid #ccc;
+	margin-top: 0;
+	background-color: #f8f8f8;
+	text-align: center;
+}
+
+.main-notice-center p {
+	margin: 0;
+}
+
+.main-notice-right a {
+	float: none;
+	margin-top: 17px !important;
+	display: inline-block !important;
+}
+
+.main-notice-right .main-maintenance-dismiss {
+	margin-left: 10px;
+	margin-bottom: 17px;
+}
+
+@media (max-width: 991px) {
+	.main-notice-right {
+		width: 25%;
+	}
+
+	.main-notice-center {
+		width: calc(75% - 85px);
+	}
+}
+
+@media (max-width: 768px) {
+	.main-notice-right {
+		width: 100%;
+		border-left: none;
+		border-top: 1px solid #ccc;
+	}
+
+	.main-notice-center {
+		width: calc(100% - 85px);
+	}
+}

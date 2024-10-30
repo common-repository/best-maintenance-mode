@@ -1,0 +1,459 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+body {
+	margin: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.maintenance-wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+.maintenance-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.maintenance-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	color: #fff;
+	font-family: 'Merriweather';
+}
+
+.maintenance-list li {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.maintenance-list li:after {
+	content: "•";
+	margin: 0 5px;
+}
+
+.maintenance-list li:last-child:after {
+	display: none;
+}
+
+.maintenance-title {
+	font-size: 55px;
+	line-height: 66px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: #fff;
+	font-family: 'Montserrat';
+	margin-top: 5px;
+	text-align: center;
+}
+
+.maintenance-description {
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat';
+	font-weight: 300;
+	margin: 40px 0;
+}
+
+.maintenance-buttons {
+	text-align: center;
+}
+
+.maintenance-buttons a {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.maintenance-buttons a:hover {
+	opacity: 0.8
+	-ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.maintenance-buttons a:before {
+	line-height: 70px;
+	font-size: 25px;
+	margin-top: 1px;
+}
+
+.maintenance-buttons .social-icons.mmicon-facebook:before {
+	margin-right: 6px;
+}
+
+.maintenance-buttons a.mmicon-github {
+	background-color: #333333;
+}
+
+.maintenance-buttons a.mmicon-dribbble {
+	background-color: #f26798;
+}
+
+.maintenance-buttons a.mmicon-twitter {
+	background-color: #5ea9dd;
+}
+
+.maintenance-buttons a.mmicon-facebook {
+	background-color: #3b5998;
+}
+
+.maintenance-buttons a.mmicon-pinterest-circled {
+	background-color: #cd2028;
+}
+
+.maintenance-buttons a.mmicon-gplus {
+	background-color: #dc4a38;
+}
+
+.maintenance-buttons a.mmicon-linkedin-squared {
+	background-color: #0077b5;
+}
+
+#main-maintenance-bg.blurred {
+	background-color: #000;
+}
+
+#main-maintenance-bg.blurred div {
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.maintenance-logo-wrapper {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/* Login */
+
+.main-maintenance-login {
+	position: absolute;
+	z-index: 2222;
+	top: 15%;
+	right: 0;
+	font-family: 'Roboto';
+	-webkit-font-smoothing: antialiased;
+}
+
+.main-maintenance-login > div {
+	padding: 35px;
+	background-color: #f3f3f3;
+	position: relative;
+	right: -100%;
+	border-radius: 5px 0 0 5px;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.main-maintenance-login > div.opened {
+	right: 0%;
+}
+
+.main-maintenance-login h1 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.main-maintenance-login input[type=text],
+.main-maintenance-login input[type=password] {
+	border: none;
+	background: #fefefe;
+	padding: 11px 15px;
+	color: #949494;
+	outline: none !important;
+	font-family: 'Roboto';
+	font-size: 14px;
+	min-width: 200px;
+	padding-left: 45px;
+}
+
+.main-maintenance-login input[type=submit] {
+	background: #45d884;
+	color: #fff;
+	border: none;
+	display: block;
+	width: 100%;
+	font-size: 17px;
+	padding: 12px 0px;
+	border-radius: 3px;
+	margin-top: 10px;
+	outline: none !important;
+	cursor: pointer;
+	font-family: 'Roboto';
+}
+
+.main-maintenance-login p {
+	margin: 2px 0;
+}
+
+.main-maintenance-login a {
+	color: #666;
+    margin-top: 20px;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+}
+
+.main-maintenance-login label {
+	display: none;
+}
+
+.main-maintenance-login .login-remember label {
+	display: block;
+	font-size: 14px;
+	color: #666;
+}
+
+.main-maintenance-login .login-remember {
+	margin-top: 10px;
+}
+
+.main-maintenance-login form {
+	margin-bottom: 0;
+}
+
+.main-maintenance-login input[type=checkbox]{
+	margin-bottom: 4px;
+	vertical-align: bottom;
+}
+
+.main-maintenance-login-open {
+	width: 0;
+	height: 0;
+	display: block;
+	position: relative;
+	left: -85px;
+	cursor: pointer;
+}
+
+.main-maintenance-login .main-maintenance-login-open:before {
+	content: '\e807';
+	font-family: 'options';
+	width: 50px;
+	height: 50px;
+	line-height: 54px;
+	text-align: center;
+	font-size: 28px;
+	display: block;
+	background-color: #f3f3f3;
+}
+
+.login-username,
+.login-password {
+	position: relative;
+}
+
+.login-username:before,
+.login-password:before {
+	font-family: "options";
+	position: absolute;
+	font-size: 25px;
+	top: 6px;
+	left: 14px;
+	color: #949494;
+}
+
+.login-username:before {
+	content: '\e808';
+}
+
+.login-password:before {
+	content: '\e809';
+	left: 16px;
+}
+
+.login-remember label {
+	line-height: 20px;
+}
+
+#main-maintenance-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#main-maintenance-bg div {
+	width: 100%;
+	height: 100%;
+}
+
+.maintenance-wrapper.template-default .maintenance-logo-wrapper {
+	margin-top: 20px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 480px) {
+	.maintenance-wrapper.template-default .maintenance-title {
+		font-size: 38px;
+		line-height: 40px;
+		word-break: break-word;
+	}
+}
+
+@media (max-width: 570px) {
+	.maintenance-inner {
+		width: 95%;
+	}
+
+	.maintenance-wrapper.template-default .maintenance-title {
+		font-size: 30px !important;
+		line-height: 36px !important;
+	}
+
+	.maintenance-wrapper.template-default .maintenance-description {
+		font-size: 16px !important;
+		line-height: 20px !important;
+	}
+
+	.maintenance-wrapper.template-default .maintenance-buttons a {
+		width: 40px;
+		height: 40px;
+	}
+
+	.maintenance-wrapper.template-default .maintenance-buttons a:before {
+		line-height: 40px;
+		font-size: 22px;
+	}
+
+	.maintenance-wrapper.template-default .main-mailchimp-wrapper #mc_embed_signup h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'options';
+  src: url('../font/options.eot?37135398');
+  src: url('../font/options.eot?37135398#iefix') format('embedded-opentype'),
+	   url('../font/options.woff2?37135398') format('woff2'),
+	   url('../font/options.woff?37135398') format('woff'),
+	   url('../font/options.ttf?37135398') format('truetype'),
+	   url('../font/options.svg?37135398#options') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+	font-family: 'options';
+	src: url('../font/options.svg?37135398#options') format('svg');
+  }
+}
+*/
+ 
+ [class^="mmicon-"]:before, [class*=" mmicon-"]:before {
+  font-family: "options";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.mmicon-dribbble:before { content: '\e800'; } /* '' */
+.mmicon-twitter:before { content: '\e801'; } /* '' */
+.mmicon-facebook:before { content: '\e802'; } /* '' */
+.mmicon-pinterest-circled:before { content: '\e803'; } /* '' */
+.mmicon-gplus:before { content: '\e804'; } /* '' */
+.mmicon-linkedin-squared:before { content: '\e805'; } /* '' */
+.mmicon-github:before { content: '\e806'; } /* '' */
+.mmicon-lock-open-alt:before { content: '\e807'; } /* '' */
+.mmicon-user:before { content: '\e808'; } /* '' */
+.mmicon-lock:before { content: '\e809'; } /* '' */
+.mmicon-location:before { content: '\e80a'; } /* '' */
+.mmicon-phone-1:before { content: '\e80b'; } /* '' */
+.mmicon-mail:before { content: '\e80c'; } /* '' */
+.mmicon-paper-plane:before { content: '\e80d'; } /* '' */
